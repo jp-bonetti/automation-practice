@@ -28,6 +28,13 @@ public class Interactions extends Elements {
         select.selectByValue(valor);
     }
 
+    public static void selectPorIndex(By by, Integer index) {
+        aguardarElemento(by);
+        WebElement selectElement = elemento(by);
+        Select select = new Select(selectElement);
+        select.selectByIndex(index);
+    }
+
     public static void limparCampo(By by){
         aguardarElemento(by);
         elemento(by).clear();
