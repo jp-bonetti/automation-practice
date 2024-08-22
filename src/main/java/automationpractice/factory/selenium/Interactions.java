@@ -21,10 +21,11 @@ public class Interactions extends Elements {
         return elemento(by).getText();
     }
 
-    public static Select select(By by){
+    public static void select(By by, String valor) {
         aguardarElemento(by);
         WebElement selectElement = elemento(by);
-        return new Select(selectElement);
+        Select select = new Select(selectElement);
+        select.selectByValue(valor);
     }
 
     public static void limparCampo(By by){

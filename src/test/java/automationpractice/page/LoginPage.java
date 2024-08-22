@@ -1,9 +1,8 @@
 package automationpractice.page;
 
-import automationpractice.factory.selenium.Interactions;
 import org.openqa.selenium.By;
 
-public class LoginPage extends Interactions {
+public class LoginPage {
 
     public static final By btnLogin = By.cssSelector("#header nav > div.header_user_info > a");
     public static final By campoEmail =

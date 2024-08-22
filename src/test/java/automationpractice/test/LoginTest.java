@@ -7,8 +7,7 @@ import io.qameta.allure.Epic;
 import io.qameta.allure.Story;
 import org.junit.jupiter.api.Test;
 
-import static automationpractice.factory.selenium.Interactions.clicar;
-import static automationpractice.factory.selenium.Interactions.preencherCampo;
+import static automationpractice.factory.selenium.Interactions.*;
 import static automationpractice.page.LoginPage.*;
 import static org.junit.Assert.assertEquals;
 import static storys.LoginStory.*;

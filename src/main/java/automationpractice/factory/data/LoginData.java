@@ -1,21 +1,30 @@
 package automationpractice.factory.data;
 
 import automationpractice.dto.LoginDTO;
-import automationpractice.util.DataFakerGenerator;
+import com.github.javafaker.Faker;
 
 public class LoginData {
 
-    DataFakerGenerator dataFakerGenerator = new DataFakerGenerator();
+    private static final Faker faker = new Faker();
 
     public LoginDTO login(){
-        return new LoginDTO("processoseletivoact@gmail.com", "teste2024");
+        return new LoginDTO(
+                "processoseletivoact@gmail.com",
+                "teste2024"
+        );
     }
 
     public LoginDTO loginEmailInvalido(){
-        return new LoginDTO(dataFakerGenerator.emailInvalido(), dataFakerGenerator.senha());
+        return new LoginDTO(
+                faker.internet().emailAddress().split("@")[0],
+                faker.internet().password()
+        );
     }
 
     public LoginDTO loginSenhaInvalida(){
-        return new LoginDTO("processoseletivoact@gmail.com", dataFakerGenerator.senha());
+        return new LoginDTO(
+                "processoseletivoact@gmail.com",
+                faker.internet().password()
+        );
     }
 }
