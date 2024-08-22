@@ -172,7 +172,7 @@
     QUANDO clico no botão "Send"
     ENTÃO a mensagem "Invalid email address." deve ser exibida na tela.
 
-## - Incrição Newsletter
+## - Inscrição Newsletter
     US: Como usuário do sistema, desejo poder me inscrever na Newsletter
 
     CT001: Inscrição na Newsletter
