@@ -37,7 +37,7 @@
     ENTÃO a mensagem "Authentication failed." deve ser exibida na tela.
 
 ## - Logout
-    US: Como usuário logado do sistema, desejo fazer logout na apliação
+    US: Como usuário logado do sistema, desejo fazer logout na aplicação
 
     CT001: Realizar logout
     DADO que estou logado na aplicação
