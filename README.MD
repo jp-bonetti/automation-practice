@@ -1,19 +1,8 @@
-
-# Task03 - QA - My Shop
-
-### Descrição
-Projeto de treinamento Selenium
-
-**Grupo:** Pedro de Gasperi, João Bonetti e Carolina Jacques
-
 # Funcionalidades mapeadas
 
 - LOGIN
 - LOGOUT
-- CADASTRAR USUARIO
-- ADICIONAR AO CARRINHO
-- CHECKOUT(pagamentos)
-- ADICIONAR ENDEREÇO
+- CADASTRAR USUÁRIO
 - CONTACT US
 - ATUALIZAR INFORMAÇÕES DE PERFIL
 - INSCRIÇÃO NEWSLETTER
@@ -21,7 +10,7 @@ Projeto de treinamento Selenium
 
 # Casos de teste:
 ## - Login:
-    US: Como usuário do sistema, desejo realizar login na aplicação;
+    US: Como usuário do sistema, desejo realizar login na aplicação
 
     CT001: Realizar login com dados válidos
     DADO que estou na página home
@@ -46,6 +35,15 @@ Projeto de treinamento Selenium
     E preencho o campo senha com uma senha inválida
     QUANDO clico no botão Sign in
     ENTÃO a mensagem "Authentication failed." deve ser exibida na tela.
+
+## - Logout
+    US: Como usuário logado do sistema, desejo fazer logout na apliação
+
+    CT001: Realizar logout
+    DADO que estou logado na aplicação
+    E estou na página home
+    QUANDO clico no botão "Sign out"
+    ENTÃO a opção "Sign in" deve aparecer novamente. 
 
 ## - Cadastro:
     US: Como usuário do sistema, desejo me cadastrar na aplicação;
