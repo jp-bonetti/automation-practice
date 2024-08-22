@@ -1,3 +1,21 @@
+# Automação de Testes de UI - Plataforma Automation Practice
+
+- URL da aplicação: http://automationpractice.com/index.php
+- Tecnologia utilizada: Selenium WebDriver + JUnit 5 com Java
+
+## Como baixar o projeto?
+    Clone o repositório com o comando: 
+    git clone https://github.com/jp-bonetti/processo-seletivo.git
+
+## Como executar o projeto?
+    - Abra o projeto em uma IDE de sua preferência
+    - Clique com o botão direito no pacote test, e selecione a opção "Run tests"
+    - Os testes serão executados e o relatório será gerado na pasta "allure-results" no projeto
+    - Para visualizar o relatório, instale o Allure, e execute o comando "allure serve" no terminal
+    - O relatório será aberto no navegador padrão, como mostrado abaixo:
+
+<img src="relatorio-allure.png">
+
 # Funcionalidades mapeadas
 
 - LOGIN
